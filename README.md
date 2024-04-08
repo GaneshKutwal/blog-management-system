@@ -12,7 +12,7 @@
   - python manage.py runserver
 
 5> API Endpoints:
-  i > User Registration
+  - User Registration
       - Endpoint: http://127.0.0.1:8000/register/
       - Method: POST
       - Payload:
@@ -20,7 +20,7 @@
               "username": "new_user1",
               "password": "new_password1"
           }
-  ii> User Login:
+  - User Login:
       - Endpoint: http://127.0.0.1:8000/login/
       - Method: POST
       - Payload :
@@ -28,7 +28,8 @@
             "username": "new_user1",
             "password": "new_password1"
         }
-  iii> Create a Post
+  - Create a Post
+    
       - Endpoint: http://127.0.0.1:8000/posts/
       - Method: POST
       - Payload:
@@ -37,23 +38,23 @@
           "content": "This is the content of the sample post."
       }
 
-  iv> Get, Update, Delete a Post
-        - Endpoint: http://127.0.0.1:8000/posts/2/
-        - Methods: GET, PUT, DELETE
-        - Payload for Update (PUT)
-        {
-            "title": "Updated Post Title123",
-            "content": "This is the updated content of the post."
-        }
+  - Get, Update, Delete a Post:
+     - Endpoint: http://127.0.0.1:8000/posts/2/
+     - Methods: GET, PUT, DELETE
+     - Payload for Update (PUT):
+     {
+        "title": "Updated Post Title123",
+        "content": "This is the updated content of the post."
+    }
 
-  v> Comments on a Post
-        - Endpoint: http://127.0.0.1:8000/posts/2/comments/
-        - Methods: GET, POST, PUT
-        - Payload for Creating a Comment (POST)
-        {
-            "post": 2,
-            "text": "This is a sample comment for the post."
-        }
+  - Comments on a Post:
+      - Endpoint: http://127.0.0.1:8000/posts/2/comments/
+      - Methods: GET, POST, PUT
+      - Payload for Creating a Comment (POST):
+      {
+         "post": 2,
+         "text": "This is a sample comment for the post."
+      }
 
         
 
